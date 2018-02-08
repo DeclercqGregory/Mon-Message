@@ -7,25 +7,24 @@
   <br>
   <div class="row">
       <div class="col-xs-6 col-md-3">
-        <a id="1" href="#app_photo" class="thumbnail" >Appareil photo ou caméra</a>
-        <%= image_tag('photo.png') %>
-
-
+        <a href="#app_photo" class="thumbnail" >Appareil photo ou caméra
+           <%= image_tag"photo.png" %>
+        </a>
       </div>
       <div class="col-xs-6 col-md-3">
-        <a href="#tablette" class="thumbnail">Tablette ou smartphone</a>
-          <img class="media-object"><p id="image3"></p></img>
-
+        <a href="#tablette" class="thumbnail">Tablette ou smartphone
+          <img <%= image_tag"smart_tab.png" %> </img>
+        </a>
       </div>
       <div class="col-xs-6 col-md-3">
-        <a href="#mac" class="thumbnail">Webcam sous Mac</a>
-          <p id="image3"></p>
-
+        <a href="#mac" class="thumbnail">Webcam sous Mac
+          <img <%= image_tag"apple.jpeg" %> </img>
+        </a>
       </div>
       <div class="col-xs-6 col-md-3">
-        <a href="#windows" class="thumbnail">webcam sous Windows</a>
-          <p id="4"></p>
-
+        <a href="#windows" class="thumbnail">webcam sous Windows
+          <img <%= image_tag"windows.png" %> </img>
+        </a>
       </div>
   </div>
 </div>
@@ -37,9 +36,9 @@
 
       <div id="media" class="media">
         <div class="media-left media-middle">
-          <img class="media-object">
-            <p id="5"></p>
+          <img class="media-object" <%= image_tag"photo.png"%>
           </img>
+
         </div>
             <div class="media-body">
             <p>Avec ce type d'appareil, il suffit d'enregistrer son message puis de le transferer sur votre ordinateur
@@ -56,9 +55,9 @@
 
       <div id="media" class="media">
         <div class="media-left media-middle">
-          <img class="media-object">
-            <p id="6"></p>
-              </img>
+          <img class="media-object" <%= image_tag"app_photo.jpeg"%>
+          </img>
+
         </div>
             <div class="media-body">
               <p>Il est également possible d'enregistrer son message à partir de la webcam de son smartphone ou de sa tablette à
@@ -68,7 +67,7 @@
 
       <div id="media" class="media">
         <div class="media-left media-middle">
-          <img class="media-object"><p id="7"></p>
+          <img class="media-object" <%= image_tag"selfie.png"%>
           </img>
         </div>
           <div class="media-body">
@@ -88,7 +87,7 @@
 
       <div id="media" class="media">
         <div class="media-left media-middle">
-          <img> <p id="8"></p>
+          <img class="media-object" <%= image_tag"booth.png"%>
           </img>
         </div>
             <div class="media-body">
@@ -98,7 +97,7 @@
 
         <div id="media" class="media">
           <div class="media-left media-middle">
-            <img class="media-object"> <p id="9"></p>
+            <img class="media-object" <%= image_tag"booth2.png"%>
           </img>
           </div>
           <div class="media-body">
@@ -112,7 +111,7 @@
 
           <div id="media" class="media">
             <div class="media-left media-middle">
-            <img class="media-object"> <p id="10"></p>
+            <img class="media-object" <%= image_tag"booth3.png"%>
             </img>
             </div>
 
@@ -130,7 +129,7 @@
 
       <div id="media" class="media">
         <div class="media-left media-middle">
-          <img class="media-object"> <p id="11"></p>
+          <img class="media-object" <%= image_tag"windows.png"%>
           </img>
 
         </div>

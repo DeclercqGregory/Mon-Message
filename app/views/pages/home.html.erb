@@ -1,2 +1,172 @@
-<h1>Pages#homeaccueilessai</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+
+
+<!-- Pour les liens vers d'autres pages ne pas oublier d'utiliser les helpers " link to "
+  voir lesson CRUD  dans rails chapitre link_to min22 -->
+
+<div id="bloc_superieur">
+         <div id="titre_principale">
+            <h1>My Message</h1>
+            <h3 id="sous-titre">Ne partez pas sans dire adieu...</h3><!--sous titre-->
+        <!--<button id="bouton" type="button" class="btn btn-outline-primary" data-target="#exampleModal">>Envoyer mon message</button>-->
+            <!--<button id="bouton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" > -->
+
+              <% if user_signed_in? %>
+
+              <%= link_to "Envoyer mon message", new_message_path, class: "btn btn-primary" %>
+
+
+              <% else %>
+              <%= link_to "Créer un compte", new_user_registration_path, class: "btn btn-primary" %>
+
+              <% end %>
+         </div>
+  </div>
+
+<div id="cont">
+  <div id="bloc-secondaire">
+           <div id="transition">
+              <div id="un">
+              </div>
+              <div id="deux">
+              </div>
+              <div id="trois">
+              </div>
+              <div id="quatre">
+              </div>
+           </div>
+
+           <div class="accroche">
+                  <p>Nous avons tous des proches à qui nous tenons et il n’est pas toujours facile, au quotidien, d’exprimer ses sentiments, de leur dire à quel point ils comptent pour nous.</p>
+
+
+                  <p>Malgré tous les efforts réalisés pour rendre notre quotidien plus sûr, la vie moderne nous expose à des risques. Sans vraiment en être conscient, nous savons et nous acceptons qu’un accident puisse nous arriver, soudainement, sans prévenir ou que la maladie puisse nous emporter tout aussi rapidement.</p>
+                  <p><strong>Si cela devait nous arriver, quel serait notre plus grand regret ?</strong></p>
+                  <p>Certainement de ne pas pouvoir dire à ceux qu’on aime tout ce qu’ils représentent pour nous. Ne pas pouvoir leur apporter le réconfort dont ils vont avoir besoin. Ne pas pouvoir leur dire à quel point la vie avec eux était belle.</p>
+                  <p>Ne pas pouvoir leur dire ...</p>
+           </div>
+
+            <div id="transition-bas">
+                  <div id="tr-bas-1">
+
+                  </div>
+                  <div id="tr-bas-2">
+                  </div>
+                  <div id="tr-bas-3">
+                  </div>
+                  <div id="tr-bas-4">
+                  </div>
+            </div>
+            <div class="accroche">
+                      <p> Aujourd’hui, <strong> My Message</strong> vous propose un service nouveau. L’enregistrement d’un message vidéo qui serait remis à vos proches en cas décès. Un message dans lequel vous aurez l’occasion de dire toutes ces choses si importantes. Une dernière image de vous pleine de tendresse et de bienveillance. Imaginez-vous le réconfort que ressentiront alors vos proches dans pareille situation.
+                      </p>
+            </div>
+
+            <div id="video">
+                   <video  controls poster="sintel.jpg" class="media-object" alt="..." <%= image_tag "MyMessagev2.mp4"%>
+                   </video>
+            </div>
+                <div id="explications">
+                  <div class="chapitre">
+                        <h3>Pourquoi ?</h3>
+
+                          <p>Nous savons tous que nous ne sommes pas éternels et, que personne n'est à l'abri d'une dispariton brutale. Nous pouvons tous être victime d'un accident de la route, d'un accident du travail ou touchés par la maladie. Les exemples autour de nous sont malheureusement trop fréquents.
+                            N'y a t-il pas alors plus grande frustration que de partir sans avoir l'occasion de laisser un dernier message à ceux qui nous entourent?</p>
+
+                          <p>My Message est un service bénéfique pour soi-même ainsi que pour nos proches.</p>
+
+                          <p>Pour soi-même :</p>
+
+
+                          <p>Se libérer de la crainte de « partir » sans dire adieu:
+                          Pour quelques euros par an, vous vous assurez de laisser un message, contenant tout ce qu'il vous semble essentiel à transemttre dans pareille situation.</p>
+
+                          <p>Prendre un momment de reflexion afin de se focaliser sur les choses essentielles de la vie :
+                          Réfléchir à ce que l'on aimerait dire à ceux que l'on aime car parfois, les mots du quotidien sont bien éloignés de nos valeurs fondamentales. Cette réflexion vous sera bénéfique et vous permttra de vous concentrer sur les choses vraiment importantes mais également de mieux communiquer avec vos proches. </p>
+
+                          <p>Pouvoir s'exprimer sincèrement : Lorsque l'on se sait malade, nos proches ne peuvent pas et ne veulent pas se projetter sans nous, il est alors extrêmement difficile de parler avec eux de la mort. En effet, ils ne vous laisseront pas vous exprimer sincèrement et essayeront de vous rassurer, en vous disant que tout ira bien. My message est la solution pour leur dire ce qui vous tient à coeur.</p>
+
+
+
+                          <p>Pour nos proches :</p>
+
+                          <p>Ne pas les laisser dans la douleur: La disparition brutale d'un proche est une souffrance insupportable. My Message apportera alors à ceux qui vous sont cher le réconfort et le soulagement dont ils vont avoir besoin.</p>
+
+
+                          <p>Leur dire ce que l’on souhaiterai pour eux et leur donner la force de continuer sans nous, malgré la tristesse :
+                          Pouvoir
+                          leur fixer un cap et les conseiller pour la suite.
+
+                          <p>Dire à ses enfants, petits-enfants, des choses qu’ils ne peuvent pas encore comprendre.</p>
+
+                          <p>My Message peut également servir à expliquer certains choix qui pourraient ne pas être compris par ceux qui restent après votre départ. Grâce à My Message, vous avez l'occasion de justifier de choix difficiles.</p>
+                          <p>Enfin, partager des sentiments qui ne sont pas toujours faciles à exprimer (regrets, frustrations, joies, amour...).</p>
+
+
+                  </div>
+
+                      <div class="chapitre">
+                            <h3 id="comment">Comment ?</h3>
+                                 <p>C’est très simple.
+                                  Dans un premier temps, nous vous conseillons de rédiger votre message par écrit.
+                                  Ensuite, munissez vous de votre smartphone, votre caméra, tablette ou tout autre appareil permettant de vous filmer et enregistrez votre message, le plus simplement et le plus sincèrement possible.
+                                  Une fois satisfait de votre message, copiez-le sur votre ordinateur puis rendez-vous sur notre page « Créer un compte». Une fois votre compte validé, vous n'aurez plus qu'a cliquer sur "Envoyer mon message". Vous serez redirigé vers notre formulaire
+                                  premettant l'envoi de votre message.</p>
+                      </div>
+                      <div class="chapitre">
+                        <h3>Sécurité</h3>
+                                  <p>
+                                  La sécurité de vos messages et de vos données personnelles est notre priorité. Nous nous engageons à tout mettre en oeuvre afin d'en garantir la confidentialité. Pour cela, nous stockons vos données dans des éspaces sécurisés et cryptés. Pour ne pas dépendre d'un seul data-center, vos fichiers sont dupliqués et stockés dans des espaces différents. Vos messages sont directement acheminés dans notre base de données sans aucune manipulation humaine afin que personne ne puisse les consulter.
+                                  </p>
+                      </div>
+                      <div class="chapitre">
+                                <h3>Fonctionnement</h3>
+                                  <p>Nous consultons des base de données afin d'être averti du décès d'un client. Lorsque nous avons l'information, nous la validons en contactant les services de l'état civil. Ensuite, nous proposons la remise des messages aux proches que le client à désigné. </p>
+                                  <p>Le service peut également fonctionner sur le principe d 'une assurance décès- invalidité, la remise du message se fera alors sur réclamation d'un proche. Celui-ci nous adressera sa demande par internet ou par téléphone accompagnée du justificatif de décès du client et d’une preuve de son identité.
+                                  Aucune information ne sera transmise avant d’avoir « confirmé » le décès du client et l’identité du demandeur.
+                                  Si l’information est validée, et que la personne est destinataire d’un message, <span id="prix">My Mesage</span> lui transmettra le fichier par mail ou par courrier sur support usb. Si le client avait laissé d’autres messages à d’autres destinataires, c’est nous qui prenons contact avec les destinataires afin de leur proposer la remise du message. En souscrivant à ce service, vous êtes certain, quelque soit la situation, que votre message sera remis à la personne désignée.
+                                  Vous savez que vous ne partirez pas sans dire adieu. Vous savez que vos proches entendront ce qu’il vous semble essentiel. Vous vous assurez également que votre message ne tombera pas dans de mauvaises mains, qu’il ne sera visionné par une tierce personne ou détourné.
+                                  </p>
+                      </div>
+                      <div class="chapitre">
+                                <h3>Prix</h3>
+                                  <p>L’abonnement annuel de 12 euros vous permet d’enregistrer un messages qui poura être remis à deux personnes différentes.</p>
+
+                      </div>
+                      <div class="chapitre">
+                                <h3>Garanties</h3>
+                                  <p>Le message sera proposé à vos proches dans un délai maximum de 1 mois après leur demande. Les messages seront stockés sur des serveurs sécurisés afin d’en assurer la confidentialité.
+                                  Vous pourrez décider à tout moment de ne pas renouveler votre abonnement.
+                                  Vous pourrez décider de remplacer ou supprimer votre message à tout moment.
+                                  Les informations personnelles obtenues sur nos clients ainsi que les destinataires des messages seront confidentielles. Les données ne seront jamais utilisées à des fins commerciales. Elles ne seront jamais transmises à d’autres opérateurs. Nous nous engageons également à faire évoluer votre fichier afin qu’il reste utilisable dans le temps (mise à jour des codecs et du support en fonction de l’évolution technologique).</p>
+                      </div>
+                </div>
+                        <div class="temoignages">
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <h3>Témoignages</h3>
+                        </div>
+                            <div class="col-xs-12 col-sm-3">
+
+                                <img class="circle rounded-circle" <%= image_tag "greg_cv1.jpg" %>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <p>J'ai décidé de proposer ce service car je me suis rendu compte qu'en cas de malheur,
+                                je partirais sans dire les choses qui me semblent essentielles à mes proches. Par exemple
+                              , à ma fille de sept ans à qui je dis tous les jours de bien travailler à l'école pour avoir un
+                                bon travail et bien gagner sa vie plus tard...Est-ce vraiment ce que je lui souhaite le plus, est-ce vraiment
+                                le plus important ? Croyez-moi, dans le message qui lui est destiné, je ne lui dit pas
+                                que le plus important c'est d'avoir un bon travail et de bons réslutats. Et pourtant au quotidien je lui
+                                rabâche les oreilles avec çà. Comme quoi, les mots du quotidien et nos
+                                valeurs essentielles sont parfois bien éloignées...Grâce à My-Message, si il m'arrive quelque
+                                chose, ma fille entendra tous les conseils que j'ai pour elle, et tout ce qui me parrait
+                                important pour son avenir. De plus, je suis certain que ce message lui apportera le réconfort
+                                dont elle aura besoin.</p>
+                                <p><strong>Grégory Declercq</strong></p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+

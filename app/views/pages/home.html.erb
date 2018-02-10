@@ -5,6 +5,8 @@
 <!-- Pour les liens vers d'autres pages ne pas oublier d'utiliser les helpers " link to "
   voir lesson CRUD  dans rails chapitre link_to min22 -->
 
+
+
 <div id="bloc_superieur">
          <div id="titre_principale">
             <h1>My Message</h1>
@@ -22,10 +24,9 @@
 
               <% end %>
          </div>
-  </div>
 
-<div id="cont">
-  <div id="bloc-secondaire">
+        <div id="cont">
+          <div id="bloc-secondaire">
            <div id="transition">
               <div id="un">
               </div>
@@ -38,9 +39,9 @@
            </div>
 
            <div class="accroche">
+                  <br>
+                  <br>
                   <p>Nous avons tous des proches à qui nous tenons et il n’est pas toujours facile, au quotidien, d’exprimer ses sentiments, de leur dire à quel point ils comptent pour nous.</p>
-
-
                   <p>Malgré tous les efforts réalisés pour rendre notre quotidien plus sûr, la vie moderne nous expose à des risques. Sans vraiment en être conscient, nous savons et nous acceptons qu’un accident puisse nous arriver, soudainement, sans prévenir ou que la maladie puisse nous emporter tout aussi rapidement.</p>
                   <p><strong>Si cela devait nous arriver, quel serait notre plus grand regret ?</strong></p>
                   <p>Certainement de ne pas pouvoir dire à ceux qu’on aime tout ce qu’ils représentent pour nous. Ne pas pouvoir leur apporter le réconfort dont ils vont avoir besoin. Ne pas pouvoir leur dire à quel point la vie avec eux était belle.</p>
@@ -64,8 +65,8 @@
             </div>
 
             <div id="video">
-                   <video controls poster="sintel.jpg" class="media-object" alt="video explication"> <%= image_tag"MyMessagev2.mp4" %>
-
+                   <video  controls poster="sintel.jpg" class="media-object" alt="video explication"
+                    <%= image_tag"MyMessagev2.mp4" %></video>
             </div>
                 <div id="explications">
                   <div class="chapitre">
@@ -96,7 +97,7 @@
 
                           <p>Leur dire ce que l’on souhaiterai pour eux et leur donner la force de continuer sans nous, malgré la tristesse :
                           Pouvoir
-                          leur fixer un cap et les conseiller pour la suite.
+                          leur fixer un cap et les conseiller pour la suite.</p>
 
                           <p>Dire à ses enfants, petits-enfants, des choses qu’ils ne peuvent pas encore comprendre.</p>
 
@@ -141,16 +142,20 @@
                                   Vous pourrez décider de remplacer ou supprimer votre message à tout moment.
                                   Les informations personnelles obtenues sur nos clients ainsi que les destinataires des messages seront confidentielles. Les données ne seront jamais utilisées à des fins commerciales. Elles ne seront jamais transmises à d’autres opérateurs. Nous nous engageons également à faire évoluer votre fichier afin qu’il reste utilisable dans le temps (mise à jour des codecs et du support en fonction de l’évolution technologique).</p>
                       </div>
+                  </div>
                 </div>
+              </div>
+
+
                         <div class="temoignages">
-                        <div class="container">
-                        <div class="row">
-                        <div class="col-xs-12 col-sm-12">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12">
                             <h3>Témoignages</h3>
                         </div>
                             <div class="col-xs-12 col-sm-3">
 
-                                <img class="circle rounded-circle" <%= image_tag "greg_cv1.jpg" %>
+                                <img class="circle rounded-circle" <%= image_tag "greg_cv1.jpg" %> </img>
                             </div>
                             <div class="col-xs-12 col-sm-9">
                                 <p>J'ai décidé de proposer ce service car je me suis rendu compte qu'en cas de malheur,
@@ -167,6 +172,7 @@
                                 <p><strong>Grégory Declercq</strong></p>
                             </div>
                         </div>
-                        </div>
-                        </div>
+                      </div>
+                    </div>
+
 

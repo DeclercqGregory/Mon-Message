@@ -12,11 +12,13 @@
   border-bottom: 13px solid black;
 
 }
+
 #titre_principale {
 
   color: white;
   padding-top: 22em;
   text-align: center;
+  margin :0px;
 
 }
 
@@ -30,7 +32,7 @@
 
   margin: 0em;
   text-shadow: 3px 3px 3px grey;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   font-family: (inherit);
   line-height: 1.1;
@@ -40,7 +42,7 @@
 
   text-shadow: 3px 3px 3px grey;
   font-family: (Allura);
-  font-size: 4em;
+  font-size: 3em;
   margin-top: 0px;
   padding-top: 5px;
   padding-bottom: 1em;
@@ -154,7 +156,9 @@
 #video {
   padding-top: 1em;
   padding-bottom: 1em;
+}
 
+video {
   display: block;
   margin : auto;
   border : 2px solid black;
@@ -213,11 +217,18 @@ margin: 0px;
 
   #bloc_superieur {
 
+    margin :0px;
     height: 40em;
+    width : 110%;
   }
 
   #bloc_superieur h1 {
-    font-size: 3em;
+    font-size: 2em;
+  }
+  #sous-titre {
+    font-size : 2em;
+    padding-left :10px;
+    padding-right :10px;
   }
 
 #bouton {
@@ -225,13 +236,12 @@ margin: 0px;
 
 }
 
-
   video {
     display: block;
     margin : auto;
     border : 2px solid black;
     background-image: url("video_lancement-mini.png");
-    width: 25em;
+    width: 350px;
     background-repeat: no-repeat;
     margin-top: 2em;
   }

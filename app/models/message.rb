@@ -1,5 +1,7 @@
 class Message < ApplicationRecord
 
+
+
   belongs_to :user
 
   validates :createur_name, presence: true

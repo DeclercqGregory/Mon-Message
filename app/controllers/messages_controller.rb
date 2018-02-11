@@ -4,6 +4,7 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
+
   end
 
   def create
@@ -20,6 +21,7 @@ end
   end
 
   def update
+    @uploader.update_attribute :avatar_key, params[:key]
   end
 
   def destroy

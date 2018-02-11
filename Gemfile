@@ -9,6 +9,7 @@ gem 'rails', '5.1.4'
 gem 'redis'
 gem 'devise'
 gem 'carrierwave'
+gem 'fog'
 
 
 

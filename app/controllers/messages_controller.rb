@@ -21,7 +21,7 @@ end
   end
 
   def update
-    @uploader.update_attribute :avatar_key, params[:key]
+    @uploader.update_attribute :message_key, params[:key]
   end
 
   def destroy

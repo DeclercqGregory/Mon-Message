@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <br>
+      <br>
+      <br>
+      <br>
+
+<h1 class="text-center">Envoyez votre message</h1>
+      <br>
+      <br>
+      <p>Informations client</p>
+
+  <%= simple_form_for @message do |f| %>
+    <%= f.input :createur_name, placeholder: "Dupont", label: "Entrez votre nom" %>
+    <%= f.input :createur_prenom, placeholder: "Pierre", label: "Entrez votre prénom" %>
+    <%= f.input :createur_date_naissance, placeholder: "10/02/1970", label: "Date de naissance" %>
+    <%= f.input :createur_ville_naissance, placeholder: "Metz", label: "Ville de naissance" %>
+    <%= f.input :createur_pays_naissance, placeholder: "France", label: "Pays de naissance" %>
+
+    <p>Adresse</p>
+    <%= f.input :createur_rue, placeholder: "432 Chemin des écoliers", label: "Numéro et voie" %>
+    <%= f.input :createur_codepostal, placeholder: "06000", label: "Code postal" %>
+    <%= f.input :createur_ville, placeholder: "Nice", label: "Ville" %>
+    <%= f.input :createur_pays, placeholder: "France", label: "Pays" %>
+    <p>Informations de contact</p>
+    <%= f.input :createur_mail, placeholder: "dupont-pierre@mail.com", label: "Entrez votre mail" %>
+    <%= f.input :createur_tel, placeholder: "03 01 02 03 04", label: "Numéro de téléphone" %>
+    <br>
+   <p>Informations premier destinataire</p>
+    <%= f.input :dest_nom, placeholder: "Durand", label: "Entrez le nom du destinataire" %>
+    <%= f.input :dest_prenom, placeholder: "Michel", label: "Entrez le prénom du destinataire" %>
+    <%= f.input :dest_mail, placeholder: "durand.michel@mail.fr", label: "Entrez le mail du destinataire" %>
+    <%= f.input :dest_tel, placeholder: "01 02 03 04 05", label: "Entrez le numéro de téléphone du destinataire" %>
+    <p>Adresse du destinataire</p>
+    <%= f.input :dest_rue, placeholder: "432 Chemin des écoliers", label: "Numéro et voie" %>
+    <%= f.input :dest_codepostal, placeholder: "06000", label: "Code postal" %>
+    <%= f.input :dest_ville, placeholder: "Nice", label: "Ville" %>
+    <%= f.input :dest_pays, placeholder: "France", label: "Pays" %>
+    <p>Informations second destinataire (pas obligatoire)</p>
+    <%= f.input :dest_2_nom, placeholder: "Martin", label: "Entrez le nom du second destinataire" %>
+    <%= f.input :dest_2_prenom, placeholder: "Christophe", label: "Entrez le prénom du second destinataire" %>
+    <%= f.input :dest_2_mail, placeholder: "martin@mail.fr", label: "Entrez le mail du second destinataire" %>
+    <%= f.input :dest_2_tel, placeholder: "01 02 03 04 05", label: "Entrez le numéro de téléphone du second destinataire" %>
+    <p>Adresse de second destinataire</p>
+    <%= f.input :dest_2_rue, placeholder: "432 Chemin des écoliers", label: "Numéro et voie" %>
+    <%= f.input :dest_2_codepostal, placeholder: "06000", label: "Code postal" %>
+    <%= f.input :dest_2_ville, placeholder: "Nice", label: "Ville" %>
+    <%= f.input :dest_2_pays, placeholder: "France", label: "Pays" %>
+    <br>
+
+    <%= f.input :video, as: :file %>
+    <%= f.button :submit, "Envoyer", class: "btn btn-primary" %>
+    <% end %>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+</div>

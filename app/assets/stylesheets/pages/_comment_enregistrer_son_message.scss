@@ -1,7 +1,6 @@
 #enregistrer {
   margin-top : 7em;
-  margin-right : 3em;
-}
+  }
 
 #media img {
 
@@ -13,6 +12,25 @@
   margin : 3em;
   font-size: 2em;
 
+}
+
+@media screen and (max-width: 600px) {
+
+
+#explications img {
+  width : 100px;
+}
+
+
+#explications h4 {
+
+  margin : 10px;
+  font-size: 2em;
+  text-align: center;
+  }
+#enregistrer {
+  margin-top : 4em;
+  }
 }
 
 

@@ -6,19 +6,15 @@
       <br>
       <br>
 
-<h1 class="text-center">Envoyez votre message</h1>
+<h1 class="text-center">Modifiez vos inforamtions</h1>
       <br>
       <br>
-      <p>Informations client</p>
+
 
   <%= simple_form_for @message do |f| %>
-    <%= f.input :createur_name, placeholder: "Dupont", label: "Entrez votre nom" %>
-    <%= f.input :createur_prenom, placeholder: "Pierre", label: "Entrez votre prénom" %>
-    <%= f.input :createur_date_naissance, placeholder: "10/02/1970", label: "Date de naissance" %>
-    <%= f.input :createur_ville_naissance, placeholder: "Metz", label: "Ville de naissance" %>
-    <%= f.input :createur_pays_naissance, placeholder: "France", label: "Pays de naissance" %>
 
-    <p>Adresse</p>
+
+    <p>Mon adresse</p>
     <%= f.input :createur_rue, placeholder: "432 Chemin des écoliers", label: "Numéro et voie" %>
     <%= f.input :createur_codepostal, placeholder: "06000", label: "Code postal" %>
     <%= f.input :createur_ville, placeholder: "Nice", label: "Ville" %>
@@ -50,9 +46,11 @@
     <br>
 
     <%= f.input :video, as: :file %>
-    <%= f.button :submit, "Envoyer", class: "btn btn-primary" %>
+    <%= f.button :submit, "Modifier", class: "btn btn-primary" %>
+    <%= link_to "Retour", message_path, class: "btn btn-primary" %>
     <% end %>
     </div>
+
   </div>
   <br>
   <br>

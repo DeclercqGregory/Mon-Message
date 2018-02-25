@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <br>
+      <br>
+      <br>
+      <br>
+<h1>Mes informations</h1>
+<br>
+<br>
+
+<% @msg1.each do |msg| %>
+
+
+<p>Identifiant du message : <%= msg.id %></p>
+
+<p>Nom : <%= msg.createur_name %></p>
+
+<p>Prénom : <%= msg.createur_prenom %></p>
+
+<p>Destinataire : <%= msg.dest_nom %> <%= msg.dest_prenom %></p>
+
+<p>Mail du destinataire : <%= msg.dest_mail %> </p>
+
+<p>Téléphone du destinataire : <%= msg.dest_tel %></p>
+
+
+<p>Lien vers ma video :<% chemin = msg.video %>
+ <a href="<%= chemin %>">Ma video</a></p>
+
+
+<p>Editer <%= link_to edit_message_path(msg) do %>
+                <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+              <% end %>
+  Detruire <%= link_to message_path(msg), method: :delete do %>
+                <i class="fa fa-trash"></i>
+              <br>
+              <br>
+
+<% end %>
+<% end %>
+</p>
+<%= link_to "Retour", messages_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+

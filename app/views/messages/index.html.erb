@@ -1,0 +1,43 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <br>
+            <br>
+            <br>
+      <h1 class="text-center">Mes informations</h1>
+      <br>
+            <br>
+            <br>
+      <p>
+  <%= link_to "Retour à l'accueil", root_path, class: "btn btn-primary" %>
+  <%= link_to "Ajouter un message", new_message_path, class: "btn btn-success" %>
+      </p>
+
+        <br>
+
+        <p> Identifiant : <%= current_user.email %> , vous avez posté <%= current_user.messages.count %> message(s)</p>
+
+        <br>
+
+        <% @message.each do |msg| %>
+
+
+        <p> Identifiant du message : <%= msg.id   %> </p>
+        <p>Voir <%= link_to message_path(msg) do %>
+              <i class="fa fa-eye"></i>
+                <% end %>
+        </p>
+
+        <% end %>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+    </div>
+  </div>
+</div>

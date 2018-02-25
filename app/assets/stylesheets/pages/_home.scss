@@ -34,18 +34,19 @@
   text-shadow: 3px 3px 3px grey;
   font-size: 3em;
   text-align: center;
+  padding-bottom: 1em;
   font-family: (inherit);
   line-height: 1.1;
 }
 
-#sous-titre {
+.sous-titre {
 
   text-shadow: 3px 3px 3px grey;
   font-family: (Allura);
   font-size: 3em;
   margin-top: 0px;
   padding-top: 5px;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   margin : 0px;
 }
 
@@ -218,8 +219,8 @@ margin: 0px;
   #bloc_superieur {
 
     margin :0px;
-    height: 40em;
-    width : 110%;
+    height: 50em;
+    width : 100%;
   }
 
   #bloc_superieur h1 {

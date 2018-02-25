@@ -11,7 +11,8 @@ get "/explications" => "pages#comment_enregistrer_son_message"
 get "/demander-message" => "pages#ais_je_un_message"
 
 
-resources :messages, only: [:new, :create, :update, :edit, :destroy]
+
+resources :messages
 
 
 end

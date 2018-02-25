@@ -72,7 +72,7 @@ def message_params
     :dest_2_nom, :dest_2_prenom, :dest_2_mail, :dest_2_tel, :dest_2_rue, :dest_2_codepostal,
     :dest_2_ville, :dest_2_pays,
     :video)
-  end
+end
 end
 
 

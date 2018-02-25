@@ -14,9 +14,16 @@
 
 <p>Identifiant du message : <%= msg.id %></p>
 
+<p><strong>Mon compte</strong></p>
+
 <p>Nom : <%= msg.createur_name %></p>
 
 <p>Prénom : <%= msg.createur_prenom %></p>
+
+<p>Mail : <%= msg.createur_mail %></p>
+
+
+<p><strong>Destinataires</strong></p>
 
 <p>Destinataire : <%= msg.dest_nom %> <%= msg.dest_prenom %></p>
 
@@ -29,10 +36,10 @@
  <a href="<%= chemin %>">Ma video</a></p>
 
 
-<p>Editer <%= link_to edit_message_path(msg) do %>
+<p><strong><i>Editer</i> </strong><%= link_to edit_message_path(msg) do %>
                 <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
               <% end %>
-  Detruire <%= link_to message_path(msg), method: :delete do %>
+ <strong> <i>Detruire </i> </strong> <%= link_to message_path(msg), method: :delete do %>
                 <i class="fa fa-trash"></i>
               <br>
               <br>

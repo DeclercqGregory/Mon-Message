@@ -24,10 +24,11 @@
         <% @message.each do |msg| %>
 
 
-        <p> Identifiant du message : <%= msg.id   %> </p>
+        <p> Identifiant du message : <%= msg.id %> </p>
         <p>Voir <%= link_to message_path(msg) do %>
               <i class="fa fa-eye"></i>
                 <% end %>
+
         </p>
 
         <% end %>
